@@ -205,3 +205,27 @@ pub fn read_workspace_file(workspace_name: String, file_name: String) -> Result<
 
     fs::read(file_path).map_err(|e| e.to_string())
 }
+
+#[command]
+pub fn write_workspace_file_binary(
+    workspace_name: String,
+    file_name: String,
+    content: Vec<u8>,
+) -> Result<(), String> {
+    let home_dir = dirs::home_dir().ok_or("Could not find home directory")?;
+    let hackx_dir = home_dir.join("hackxindia26");
+    let workspace_path = hackx_dir.join(&workspace_name);
+
+    if !workspace_path.exists() {
+        return Err("Workspace does not exist".to_string());
+    }
+
+    let file_path = workspace_path.join(&file_name);
+
+    // basic security check to prevent directory traversal
+    if !file_path.starts_with(&workspace_path) {
+        return Err("Invalid file path".to_string());
+    }
+
+    fs::write(file_path, content).map_err(|e| e.to_string())
+}

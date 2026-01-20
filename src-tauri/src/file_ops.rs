@@ -116,6 +116,22 @@ pub fn write_file_content(path: String, content: String) -> Result<(), String> {
 }
 
 #[tauri::command]
+pub fn write_binary_file(path: String, content: Vec<u8>) -> Result<(), String> {
+    use std::fs;
+    use std::path::Path;
+
+    let file_path = Path::new(&path);
+
+    if file_path.is_dir() {
+        return Err("Path is a directory".to_string());
+    }
+
+    fs::write(file_path, content).map_err(|e| format!("Failed to write file: {}", e))?;
+
+    Ok(())
+}
+
+#[tauri::command]
 pub fn is_file_binary(path: String) -> Result<bool, String> {
     use std::fs;
     use std::path::Path;

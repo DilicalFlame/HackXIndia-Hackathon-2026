@@ -11,6 +11,7 @@ pub fn run() {
             file_ops::delete_file,
             file_ops::read_file_content,
             file_ops::write_file_content,
+            file_ops::write_binary_file,
             file_ops::is_file_binary,
             file_ops::delete_folder,
             file_ops::rename_entry,
@@ -22,7 +23,8 @@ pub fn run() {
             workspace::get_workspace_files,
             workspace::save_annotations,
             workspace::load_annotations,
-            workspace::read_workspace_file
+            workspace::read_workspace_file,
+            workspace::write_workspace_file_binary
         ])
         .setup(|app| {
             if cfg!(debug_assertions) {
