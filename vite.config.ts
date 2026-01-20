@@ -1,5 +1,11 @@
-import { sveltekit } from "@sveltejs/kit/vite";
-import tailwindcss from "@tailwindcss/vite";
-import { defineConfig } from "vite";
+import { defineConfig } from 'vitest/config';
+import react from '@vitejs/plugin-react';
+import tsconfigPaths from 'vite-tsconfig-paths';
 
-export default defineConfig({ plugins: [tailwindcss(), sveltekit()] });
+export default defineConfig({
+  plugins: [tsconfigPaths(), react()],
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['./vitest.setup.ts'],
+  },
+});
