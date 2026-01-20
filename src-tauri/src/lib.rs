@@ -1,3 +1,4 @@
+pub mod document;
 pub mod file_ops;
 pub mod workspace;
 
@@ -16,7 +17,11 @@ pub fn run() {
             file_ops::copy_entry,
             file_ops::move_entry,
             workspace::get_recent_workspaces,
-            workspace::create_workspace
+            workspace::create_workspace,
+            workspace::add_file_to_workspace,
+            workspace::get_workspace_files,
+            workspace::save_annotations,
+            workspace::load_annotations
         ])
         .setup(|app| {
             if cfg!(debug_assertions) {
@@ -26,6 +31,7 @@ pub fn run() {
                         .build(),
                 )?;
             }
+            app.handle().plugin(tauri_plugin_dialog::init())?;
             Ok(())
         })
         .run(tauri::generate_context!())

@@ -6,6 +6,7 @@
   import { Folder, Plus } from "@lucide/svelte";
   import { Button } from "$lib/components/ui/button/index.js";
   import * as Card from "$lib/components/ui/card/index.js";
+  import { goto } from "$app/navigation";
 
   let isModalOpen = false;
 
@@ -45,7 +46,7 @@
         <!-- svelte-ignore a11y_no_static_element_interactions -->
         <div
           onclick={() => {
-            /* Navigate or open workspace */
+            goto(`/workspace/${workspace.name}`);
           }}
         >
           <Card.Root
