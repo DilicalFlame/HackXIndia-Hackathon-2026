@@ -181,3 +181,27 @@ pub fn load_annotations(
 
     Ok(document)
 }
+
+#[command]
+pub fn read_workspace_file(workspace_name: String, file_name: String) -> Result<Vec<u8>, String> {
+    let home_dir = dirs::home_dir().ok_or("Could not find home directory")?;
+    let hackx_dir = home_dir.join("hackxindia26");
+    let workspace_path = hackx_dir.join(&workspace_name);
+
+    if !workspace_path.exists() {
+        return Err("Workspace does not exist".to_string());
+    }
+
+    let file_path = workspace_path.join(&file_name);
+
+    // basic security check to prevent directory traversal
+    if !file_path.starts_with(&workspace_path) {
+        return Err("Invalid file path".to_string());
+    }
+
+    if !file_path.exists() {
+        return Err("File does not exist".to_string());
+    }
+
+    fs::read(file_path).map_err(|e| e.to_string())
+}

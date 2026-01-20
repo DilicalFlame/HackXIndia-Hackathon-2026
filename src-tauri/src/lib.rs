@@ -21,7 +21,8 @@ pub fn run() {
             workspace::add_file_to_workspace,
             workspace::get_workspace_files,
             workspace::save_annotations,
-            workspace::load_annotations
+            workspace::load_annotations,
+            workspace::read_workspace_file
         ])
         .setup(|app| {
             if cfg!(debug_assertions) {
@@ -32,6 +33,7 @@ pub fn run() {
                 )?;
             }
             app.handle().plugin(tauri_plugin_dialog::init())?;
+            app.handle().plugin(tauri_plugin_fs::init())?;
             Ok(())
         })
         .run(tauri::generate_context!())
