@@ -1,6 +1,7 @@
 # hackxindia26
 
 A comprehensive cross-platform document reader application built for HackXIndia 2026 under the Education theme.
+Video Link: https://drive.google.com/file/d/1m2Dv0lvecLmCaOx6sNDOeQ6n_ux9CiKY/view?usp=sharing
 
 ## Project Overview
 
