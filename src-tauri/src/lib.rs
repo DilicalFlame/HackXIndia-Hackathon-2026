@@ -261,7 +261,7 @@ pub fn run() {
                 app.listen("window-ready", move |_| {
                     let webview = app_handle.get_webview_window("main").unwrap();
                     webview
-                        .eval("window.__READEST_CLI_ACCESS = true;")
+                        .eval("window.__HackXIndia26_CLI_ACCESS = true;")
                         .expect("Failed to set cli access config");
 
                     #[cfg(target_os = "linux")]
@@ -272,7 +272,7 @@ pub fn run() {
                                 .unwrap_or(false);
 
                         let script =
-                            format!("window.__READEST_UPDATER_DISABLED = {};", !is_appimage);
+                            format!("window.__HackXIndia26_UPDATER_DISABLED = {};", !is_appimage);
                         webview
                             .eval(&script)
                             .expect("Failed to set updater disabled config");
@@ -293,7 +293,7 @@ pub fn run() {
             let is_eink = false;
 
             let eink_script = if is_eink {
-                "window.__READEST_IS_EINK = true;"
+                "window.__HackXIndia26_IS_EINK = true;"
             } else {
                 ""
             };
@@ -374,7 +374,7 @@ pub fn run() {
                     .decorations(false)
                     .visible(false)
                     .shadow(true)
-                    .title("Readest");
+                    .title("HackXIndia26");
 
                 #[cfg(target_os = "windows")]
                 {

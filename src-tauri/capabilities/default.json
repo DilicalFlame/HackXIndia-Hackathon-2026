@@ -18,7 +18,7 @@
       "identifier": "fs:scope-appdata-recursive",
       "allow": [
         {
-          "path": "$APPDATA/Readest/**/*"
+          "path": "$APPDATA/HackXIndia26/**/*"
         }
       ],
       "deny": []
@@ -65,10 +65,10 @@
       "identifier": "fs:scope",
       "allow": [
         {
-          "path": "**/Readest"
+          "path": "**/HackXIndia26"
         },
         {
-          "path": "**/Readest/**/*"
+          "path": "**/HackXIndia26/**/*"
         },
         {
           "path": "**/last-book-cover.png"
@@ -85,13 +85,10 @@
       "identifier": "http:default",
       "allow": [
         {
-          "url": "https://*.readest.com"
+          "url": "https://*.HackXIndia26.com"
         },
         {
-          "url": "https://github.com/readest/*"
-        },
-        {
-          "url": "https://*.deepl.com"
+          "url": "https://github.com/HackXIndia26/*"
         },
         {
           "url": "https://*.cloudflarestorage.com"
@@ -162,9 +159,9 @@
       "identifier": "shell:allow-spawn",
       "allow": [
         {
-          "name": "start-readest",
+          "name": "start-HackXIndia26",
           "cmd": "cmd",
-          "args": ["/C", "start", "", { "validator": "^.*Readest(.*)\\.exe$" }]
+          "args": ["/C", "start", "", { "validator": "^.*HackXIndia26(.*)\\.exe$" }]
         }
       ]
     },

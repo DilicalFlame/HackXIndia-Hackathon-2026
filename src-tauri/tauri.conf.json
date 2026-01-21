@@ -15,10 +15,10 @@
     "security": {
       "csp": {
         "default-src": "'self' 'unsafe-inline' blob: data: customprotocol: asset: http://asset.localhost ipc: http://ipc.localhost",
-        "connect-src": "'self' blob: data: asset: http://asset.localhost ipc: http://ipc.localhost http://*:* https://*:* https://*.sentry.io https://*.posthog.com https://*.deepl.com https://*.wikipedia.org https://*.wiktionary.org https://*.supabase.co https://*.readest.com wss://speech.platform.bing.com https://*.cloudflarestorage.com https://translate.googleapis.com https://translate.toil.cc https://*.microsofttranslator.com https://edge.microsoft.com https://*.googleusercontent.com",
+        "connect-src": "'self' blob: data: asset: http://asset.localhost ipc: http://ipc.localhost http://*:* https://*:* https://*.sentry.io https://*.posthog.com https://*.wikipedia.org https://*.wiktionary.org https://*.supabase.co https://*.HackXIndia26.com wss://speech.platform.bing.com https://*.cloudflarestorage.com https://translate.googleapis.com https://translate.toil.cc https://*.microsofttranslator.com https://edge.microsoft.com https://*.googleusercontent.com",
         "img-src": "'self' blob: data: asset: http://asset.localhost https://* https://*:* http://* http://*:*",
-        "style-src": "'self' 'unsafe-inline' blob: asset: http://asset.localhost https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com https://storage.readest.com",
-        "font-src": "'self' blob: data: asset: http://asset.localhost tauri: https://db.onlinewebfonts.com https://cdn.jsdelivr.net https://fonts.gstatic.com https://cdnjs.cloudflare.com  https://storage.readest.com",
+        "style-src": "'self' 'unsafe-inline' blob: asset: http://asset.localhost https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com https://storage.HackXIndia26.com",
+        "font-src": "'self' blob: data: asset: http://asset.localhost tauri: https://db.onlinewebfonts.com https://cdn.jsdelivr.net https://fonts.gstatic.com https://cdnjs.cloudflare.com  https://storage.HackXIndia26.com",
         "frame-src": "'self' blob: asset: http://asset.localhost https://*.stripe.com",
         "script-src": "'self' 'unsafe-inline' 'unsafe-eval' blob: asset: http://asset.localhost https://*.sentry.io https://*.posthog.com  https://*.stripe.com"
       },
@@ -133,7 +133,7 @@
       "requireLiteralLeadingDot": false
     },
     "cli": {
-      "description": "Readest CLI",
+      "description": "HackXIndia26 CLI",
       "args": [
         {
           "name": "file1",
@@ -158,16 +158,16 @@
       ]
     },
     "deep-link": {
-      "mobile": [{ "host": "web.readest.com" }],
+      "mobile": [{ "host": "web.HackXIndia26.com" }],
       "desktop": {
-        "schemes": ["readest"]
+        "schemes": ["HackXIndia26"]
       }
     },
     "updater": {
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEJFMEQ1QjE2OEU1NEIzNTEKUldSUnMxU09GbHNOdmpEaWFMT1crRFpEV2VORzQ2MklxaFc0M1R0ci9xY2c1bENXS0xhM1R1L2sK",
       "endpoints": [
-        "https://download.readest.com/releases/latest.json",
-        "https://github.com/readest/readest/releases/latest/download/latest.json"
+        "https://download.HackXIndia26.com/releases/latest.json",
+        "https://github.com/HackXIndia26/HackXIndia26/releases/latest/download/latest.json"
       ]
     }
   }
