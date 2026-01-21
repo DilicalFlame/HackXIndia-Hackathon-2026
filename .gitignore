@@ -84,3 +84,4 @@ src-tauri/gen
 /public/fallback-*.js
 /public/swe-worker-*.js
 
+target/
