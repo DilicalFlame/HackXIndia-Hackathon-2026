@@ -85,3 +85,4 @@ src-tauri/gen
 /public/swe-worker-*.js
 
 target/
+target/debug/
