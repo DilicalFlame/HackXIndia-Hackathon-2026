@@ -1,21 +1,30 @@
 {
-  "extends": "./.svelte-kit/tsconfig.json",
-  "exclude": ["node_modules"],
+  "extends": "@sindresorhus/tsconfig",
   "compilerOptions": {
-    "rewriteRelativeImportExtensions": true,
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "webworker", "esnext"],
     "allowJs": true,
-    "checkJs": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
     "skipLibCheck": true,
-    "sourceMap": true,
     "strict": true,
-    "moduleResolution": "bundler"
-  }
-  // Path aliases are handled by https://svelte.dev/docs/kit/configuration#alias
-  // except $lib which is handled by https://svelte.dev/docs/kit/configuration#files
-  //
-  // To make changes to top-level options such as include and exclude, we recommend extending
-  // the generated config; see https://svelte.dev/docs/kit/configuration#typescript
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@pdfjs/*": ["./public/vendor/pdfjs/*"],
+      "@simplecc/*": ["./public/vendor/simplecc/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.tsx", "raw-loader.d.ts", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }
