@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "pnpm setup-vendors && pnpm build-web",
-  "devCommand": "pnpm dev-web",
+  "buildCommand": "pnpm --filter @hackxindia26/hackxindia26-app setup-vendors && pnpm --filter @hackxindia26/hackxindia26-app build-web",
+  "devCommand": "pnpm --filter @hackxindia26/hackxindia26-app dev-web",
   "installCommand": "pnpm install --frozen-lockfile",
   "framework": "nextjs",
   "outputDirectory": ".next",
