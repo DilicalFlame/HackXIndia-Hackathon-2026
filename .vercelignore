@@ -1,0 +1,83 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+.nyc_output/
+
+# Tauri
+src-tauri/
+target/
+extensions/
+
+# Production builds (Tauri)
+out/
+
+# Build files
+.next/
+.cache/
+.wrangler/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env files (will be set in Vercel)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.tauri
+.env.tauri.local
+.env.ios-appstore.local
+.env.ios-appstore-dev.local
+.env.apple-appstore.local
+.env.apple-appstore-dev.local
+.env.apple-nonstore.local
+.env.google-play.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Rust
+Cargo.lock
+*.rs
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# CI/CD
+.github/
+
+# Documentation
+*.md
+!README.md
+
+# Config files not needed for web
+svelte.config.js
+vite.config.ts
+vitest.config.mts
+vitest.setup.ts
+
+# Data files
+data/
+
+# Static files not for web
+static/
