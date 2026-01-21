@@ -1,4 +1,4 @@
-package com.readest.native_tts
+package com.hackxindia26.native_tts
 
 import android.Manifest
 import android.os.Bundle

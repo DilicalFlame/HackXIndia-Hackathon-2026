@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.readest.native_bridge"
+    namespace = "com.hackxindia26.native_bridge"
     compileSdk = 36
 
     defaultConfig {

@@ -1,5 +1,5 @@
 {
-  "name": "@readest/readest-app",
+  "name": "@hackxindia26/hackxindia26-app",
   "version": "0.9.98",
   "private": true,
   "scripts": {
@@ -14,7 +14,7 @@
     "lint": "eslint .",
     "test": "dotenv -e .env -e .env.test.local vitest",
     "tauri": "tauri",
-    "clippy": "cargo clippy -p Readest --no-deps -- -D warnings",
+    "clippy": "cargo clippy -p hackxindia26 --no-deps -- -D warnings",
     "prepare-public-vendor": "mkdirp ./public/vendor/pdfjs ./public/vendor/simplecc",
     "copy-pdfjs-js": "cpx \"packages/foliate-js/node_modules/pdfjs-dist/legacy/build/{pdf.worker.min.mjs,pdf.min.mjs,pdf.d.mts}\" ./public/vendor/pdfjs",
     "copy-pdfjs-wasm": "cpx \"packages/foliate-js/node_modules/pdfjs-dist/wasm/{openjpeg.wasm,qcms_bg.wasm}\" ./public/vendor/pdfjs",

@@ -1,4 +1,4 @@
-package com.readest.native-tts
+package com.hackxindia26.native_tts
 
 import org.junit.Test
 

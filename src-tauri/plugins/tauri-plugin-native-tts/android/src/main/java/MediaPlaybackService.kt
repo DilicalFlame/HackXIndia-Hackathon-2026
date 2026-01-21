@@ -1,6 +1,6 @@
-package com.readest.native_tts
+package com.hackxindia26.native_tts
 
-import com.readest.native_tts.R
+import com.hackxindia26.native_tts.R
 import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager

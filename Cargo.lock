@@ -9,56 +9,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fe438c63458706e03479442743baae6c88256498e6431708f6dfc520a26515d3"
 
 [[package]]
-name = "Readest"
-version = "0.2.2"
-dependencies = [
- "block",
- "cocoa",
- "discord-rich-presence",
- "futures",
- "futures-util",
- "log",
- "objc",
- "objc-foundation",
- "objc2",
- "objc2-authentication-services",
- "objc2-foundation",
- "objc_id",
- "rand 0.8.5",
- "read-progress-stream",
- "reqwest 0.12.28",
- "serde",
- "serde_json",
- "tauri",
- "tauri-build",
- "tauri-plugin-cli",
- "tauri-plugin-deep-link",
- "tauri-plugin-dialog",
- "tauri-plugin-fs",
- "tauri-plugin-haptics",
- "tauri-plugin-http",
- "tauri-plugin-log",
- "tauri-plugin-native-bridge",
- "tauri-plugin-native-tts",
- "tauri-plugin-oauth",
- "tauri-plugin-opener",
- "tauri-plugin-os",
- "tauri-plugin-persisted-scope",
- "tauri-plugin-process",
- "tauri-plugin-sharekit",
- "tauri-plugin-shell",
- "tauri-plugin-sign-in-with-apple",
- "tauri-plugin-single-instance",
- "tauri-plugin-updater",
- "tauri-plugin-websocket",
- "tauri-plugin-window-state",
- "thiserror 2.0.18",
- "tokio",
- "tokio-util",
- "walkdir",
-]
-
-[[package]]
 name = "adler2"
 version = "2.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2062,6 +2012,56 @@ dependencies = [
  "tokio",
  "tokio-util",
  "tracing",
+]
+
+[[package]]
+name = "hackxindia26"
+version = "0.2.2"
+dependencies = [
+ "block",
+ "cocoa",
+ "discord-rich-presence",
+ "futures",
+ "futures-util",
+ "log",
+ "objc",
+ "objc-foundation",
+ "objc2",
+ "objc2-authentication-services",
+ "objc2-foundation",
+ "objc_id",
+ "rand 0.8.5",
+ "read-progress-stream",
+ "reqwest 0.12.28",
+ "serde",
+ "serde_json",
+ "tauri",
+ "tauri-build",
+ "tauri-plugin-cli",
+ "tauri-plugin-deep-link",
+ "tauri-plugin-dialog",
+ "tauri-plugin-fs",
+ "tauri-plugin-haptics",
+ "tauri-plugin-http",
+ "tauri-plugin-log",
+ "tauri-plugin-native-bridge",
+ "tauri-plugin-native-tts",
+ "tauri-plugin-oauth",
+ "tauri-plugin-opener",
+ "tauri-plugin-os",
+ "tauri-plugin-persisted-scope",
+ "tauri-plugin-process",
+ "tauri-plugin-sharekit",
+ "tauri-plugin-shell",
+ "tauri-plugin-sign-in-with-apple",
+ "tauri-plugin-single-instance",
+ "tauri-plugin-updater",
+ "tauri-plugin-websocket",
+ "tauri-plugin-window-state",
+ "thiserror 2.0.18",
+ "tokio",
+ "tokio-util",
+ "walkdir",
 ]
 
 [[package]]

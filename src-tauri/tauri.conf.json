@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "Readest",
-  "mainBinaryName": "readest",
-  "identifier": "com.bilingify.readest",
+  "productName": "hackxindia26",
+  "mainBinaryName": "hackxindia26",
+  "identifier": "com.dilicalflame.hackxindia26",
   "version": "../package.json",
   "build": {
     "frontendDist": "../out",
@@ -30,7 +30,7 @@
             "$APPDATA/**/*",
             "$APPCACHE/**/*",
             "$TEMP/**/*",
-            "**/Readest/**/*",
+            "**/hackxindia26/**/*",
             "/private/var/mobile/Containers/Data/Application/**/*"
           ],
           "deny": []

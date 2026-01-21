@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.readest.native_tts"
+    namespace = "com.hackxindia26.native_tts"
     compileSdk = 36
 
     defaultConfig {
